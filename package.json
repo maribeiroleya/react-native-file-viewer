@@ -6,11 +6,8 @@
   "main": "index.js",
   "files": [
     "README.md",
-    "android",
     "index.js",
-    "ios",
-    "windows",
-    "react-native-file-viewer.podspec"
+    "windows"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
