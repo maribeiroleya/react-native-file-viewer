@@ -121,10 +121,10 @@ namespace winrt::ReactNativeFileViewer
             int arg = 2;
 
             wchar_t w_filePath[260];
-            wcscpy(w_filePath, filePath.c_str());
+            wcscpy_s(w_filePath, filePath.c_str());
 
             wchar_t w_destPath[260];
-            wcscpy(w_destPath, destPath.c_str());
+            wcscpy_s(w_destPath, destPath.c_str());
 
             std::string destStr(destPath.begin(), destPath.end());
             char dest[200];
@@ -132,7 +132,7 @@ namespace winrt::ReactNativeFileViewer
 
             bool haveLetters = false;
             struct zip_t* zip = zip_open(wchar2char(w_filePath), 0, 'r');
-            int i, n = zip_entries_total(zip);
+            int i, n = zip_total_entries(zip);
 
             for (i = 0; i < n; ++i) {
                 zip_entry_openbyindex(zip, i);
