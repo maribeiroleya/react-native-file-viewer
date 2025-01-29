@@ -1,0 +1,6 @@
+{
+  "dependencies": [
+    "kubazip",
+    "cpp-httplib"
+  ]
+}
