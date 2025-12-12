@@ -1,41 +1,32 @@
 {
   "name": "react-native-file-viewer",
-  "title": "React Native File Viewer",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "2.1.5",
+  "description": "Native file viewer for react-native",
   "main": "index.js",
-  "files": [
-    "README.md",
-    "index.js",
-    "windows"
-  ],
+  "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "windows": "react-native run-windows"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/github_account/react-native-file-viewer.git",
-    "baseUrl": "https://github.com/github_account/react-native-file-viewer"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "mobile",
+    "ios",
+    "android",
+    "windows",
+    "file",
+    "viewer",
+    "preview",
+    "quicklook",
+    "pdf",
+    "doc"
   ],
-  "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+  "author": "Vincenzo Scamporlino",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vinzscam/react-native-file-viewer.git"
   },
   "license": "MIT",
-  "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
   "peerDependencies": {
-    "react": ">=16.8.1",
-    "react-native": ">=0.60.0-rc.0 <1.0.x"
-  },
-  "devDependencies": {
-    "react": "17.0.2",
-    "react-native": "0.68.2",
-    "react-native-windows": "0.68.5",
-    "metro-config": "^0.67.0"
+    "react-native": ">=0.47"
   }
 }
