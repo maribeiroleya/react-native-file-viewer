@@ -132,7 +132,7 @@ namespace winrt::ReactNativeFileViewer
 
             bool haveLetters = false;
             struct zip_t* zip = zip_open(wchar2char(w_filePath), 0, 'r');
-            int i, n = zip_total_entries(zip);
+            int i, n = zip_entries_total(zip);
 
             for (i = 0; i < n; ++i) {
                 zip_entry_openbyindex(zip, i);
